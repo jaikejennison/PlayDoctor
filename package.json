@@ -1,0 +1,24 @@
+{
+  "name": "PlayDoctor",
+  "description": "The Playwright Webdriver Doctor (for shit head asshole bad-motivator-ass-motherfuc#%*ing WebDrivers)",
+  "repository": "https://github.com/jaikejennison/PlayDoctor.git",
+  "author": "Jaike Jennison",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.13.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.13.1"
+  },
+  "scripts": {
+    "prepare": "node driverAdam.js",
+    "pretest": "npx playwright test --browser=all --reporter=dot",
+    "test": "npx playwright test --browser=all --reporter=line",
+    "posttest": "npx playwright test --browser=all --reporter=list"
+  },
+  "browser": "driverAdam.js",
+  "man": [
+    "./man/PlayDoctor.1",
+    "./man/PlayDoctor.2"
+  ]
+}
